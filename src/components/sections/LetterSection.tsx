@@ -74,10 +74,10 @@ const LetterSection: React.FC = () => {
           </motion.div>
 
           <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 via-blue-200 to-indigo-200 mb-6" style={{ fontFamily: 'Dancing Script, cursive' }}>
-            Carta do Meu Coração
+            Carta
           </h2>
           <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Palavras sinceras do coração, escritas com todo amor e carinho para você, minha princesa Kemily
+            Dessa vez, não é uma carta a mão, mas continua tendo todo o meu amor por você.
           </p>
         </motion.div>
 
@@ -90,7 +90,7 @@ const LetterSection: React.FC = () => {
           >
             {/* Glow effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-3xl blur-2xl" />
-            
+
             {/* Letter Paper Effect */}
             <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/10 overflow-hidden">
               {/* Letter Header */}
@@ -104,7 +104,7 @@ const LetterSection: React.FC = () => {
                     <PenTool size={28} />
                   </motion.div>
                   <span className="text-2xl font-bold" style={{ fontFamily: 'Dancing Script, cursive' }}>
-                    Para minha amada Kemily
+                    Para o meu amor
                   </span>
                   <motion.div
                     animate={{ scale: [1, 1.2, 1] }}
@@ -113,7 +113,7 @@ const LetterSection: React.FC = () => {
                     <Heart size={28} fill="currentColor" />
                   </motion.div>
                 </div>
-                
+
                 {/* Decorative elements */}
                 <div className="absolute top-4 left-4 text-white/30">
                   <Sparkles size={20} />
@@ -133,7 +133,7 @@ const LetterSection: React.FC = () => {
                 >
                   <Quote className="text-purple-400 flex-shrink-0 mt-2" size={32} />
                   <p className="text-xl md:text-2xl italic text-purple-200 font-medium" style={{ fontFamily: 'Dancing Script, cursive' }}>
-                    "Minha querida Kemily, minha princesa..."
+                    "Meu amor..."
                   </p>
                 </motion.div>
 
@@ -143,9 +143,9 @@ const LetterSection: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="text-base md:text-lg"
                 >
-                  Desde o momento em que você entrou na minha vida, tudo se transformou em algo mágico e extraordinário. 
-                  Seus sorrisos iluminam até os dias mais cinzentos, sua risada é a melodia mais doce que meus ouvidos 
-                  já tiveram o privilégio de escutar, e seu amor é o presente mais precioso que o universo poderia me dar.
+                  Com o passar do tempo, tenho aprendido, a cada dia, a te amar ainda mais e a entender a importância de demonstrar isso para você.
+                  Às vezes, na correria do dia a dia, talvez eu não consiga mostrar o quanto você é importante para mim,
+                  mas saiba que você é a razão do meu sorriso, a luz dos meus dias e a paz do meu coração.
                 </motion.p>
 
                 <motion.p
@@ -154,9 +154,9 @@ const LetterSection: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.6 }}
                   className="text-base md:text-lg"
                 >
-                  Cada dia ao seu lado é uma nova descoberta, uma nova razão para me apaixonar ainda mais por você. 
-                  Sua força me inspira a ser uma pessoa melhor, sua gentileza me ensina sobre o verdadeiro significado 
-                  do amor, e sua presença em minha vida me completa de uma forma que eu nunca imaginei ser possível.
+                  Você é o meu maior presente, a pessoa que faz meu coração bater mais forte e me faz acreditar que tudo é possível.
+                  Estar ao seu lado é um sonho inesquecível e maravilhoso, e eu sou eternamente grato por cada momento que compartilhamos.
+                  O seu sorriso é o melhor remédio para os meus dias difíceis, e o seu amor é a força que me impulsiona a ser uma pessoa melhor.
                 </motion.p>
 
                 <motion.p
@@ -165,9 +165,10 @@ const LetterSection: React.FC = () => {
                   transition={{ duration: 0.6, delay: 0.8 }}
                   className="text-base md:text-lg"
                 >
-                  Você não é apenas minha namorada, você é minha melhor amiga, minha confidente, minha parceira de vida 
-                  e minha alma gêmea. Com você, encontrei não apenas o amor verdadeiro, mas também um lar onde meu 
-                  coração pode descansar em paz e minha alma pode ser completamente livre.
+                  Você não é apenas minha namorada, é também minha melhor amiga, minha confidente, minha parceira de vida
+                  e a minha alma gêmea. Ao seu lado, me sinto amado, seguro e completo.
+                  Palavras jamais serão suficientes para expressar o quanto você significa para mim,
+                  mas espero que esta carta consiga transmitir ao menos um pouco do meu amor por você.
                 </motion.p>
 
                 <motion.p
@@ -176,9 +177,9 @@ const LetterSection: React.FC = () => {
                   transition={{ duration: 0.6, delay: 1.0 }}
                   className="text-base md:text-lg"
                 >
-                  Prometo cuidar do seu coração como o tesouro mais valioso que possuo, estar ao seu lado em todos os 
-                  momentos da vida, e construir junto com você uma história de amor que seja digna de ser contada 
-                  por gerações. Nosso amor é eterno, único e verdadeiro.
+                  Obrigado por ser exatamente quem você é, por me amar e por me fazer sentir tão especial.
+                  Você é a razão do meu sorriso, a luz dos meus dias e a paz do meu coração.
+                  Agora, cá estou eu... ansioso para te ver. E mesmo que este gesto seja simples, é feito com todo o meu coração.
                 </motion.p>
 
                 <motion.div
@@ -188,14 +189,16 @@ const LetterSection: React.FC = () => {
                   className="border-t border-white/20 pt-8 text-center"
                 >
                   <p className="text-lg md:text-xl text-purple-200 font-semibold mb-4">
-                    Te amo mais do que as palavras podem expressar,
+                    Eu te amo mais que tudo,
                   </p>
-                  <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-blue-200 mb-4" style={{ fontFamily: 'Dancing Script, cursive' }}>
-                    Seu Julio para sempre ✨
+                  <p
+                    className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-blue-200 mb-4"
+                    style={{ fontFamily: 'Dancing Script, cursive' }}
+                  >
+                    Seu Julio, para sempre
                   </p>
-                  
                   <motion.div
-                    animate={{ 
+                    animate={{
                       rotate: [0, 5, -5, 0],
                       scale: [1, 1.1, 1]
                     }}
