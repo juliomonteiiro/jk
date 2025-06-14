@@ -5,6 +5,14 @@ import { EffectCoverflow, Pagination, Navigation, Autoplay } from 'swiper/module
 import { Camera, X, Heart, ChevronLeft, ChevronRight, Sparkles } from 'lucide-react';
 import type { Photo } from '../../types';
 
+// Import das imagens
+import photo1 from '../../assets/images/photo-1.jpg';
+import photo2 from '../../assets/images/photo-2.jpg';
+import photo3 from '../../assets/images/photo-3.jpg';
+import photo4 from '../../assets/images/photo-4.jpg';
+import photo5 from '../../assets/images/photo-5.jpg';
+import photo6 from '../../assets/images/photo-6.jpg';
+
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -14,43 +22,43 @@ import 'swiper/css/navigation';
 const GallerySection: React.FC = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
 
-  // Usando imagens do Pexels para demonstração
+  // Usando imagens importadas do assets/images
   const photos: Photo[] = [
     {
       id: '1',
-      src: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Casal feliz',
-      caption: 'Nosso primeiro encontro mágico ✨'
+      src: photo1,
+      alt: 'J&K',
+      caption: 'A vida é boa com você'
     },
     {
       id: '2',
-      src: 'https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Casal romântico',
-      caption: 'Momentos de pura felicidade e conexão'
+      src: photo2,
+      alt: 'J&K',
+      caption: 'Qualquer momento com você faz sentido'
     },
     {
       id: '3',
-      src: 'https://images.pexels.com/photos/1024969/pexels-photo-1024969.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Casal sorrindo',
-      caption: 'Sorrisos que iluminam nossos corações'
+      src: photo3,
+      alt: 'J&K',
+      caption: 'Meu ponto de equilíbrio'
     },
     {
       id: '4',
-      src: 'https://images.pexels.com/photos/1024967/pexels-photo-1024967.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Casal abraçado',
-      caption: 'Abraços que curam a alma e aquecem o coração'
+      src: photo4,
+      alt: 'J&K',
+      caption: 'Meu presente de Deus'
     },
     {
       id: '5',
-      src: 'https://images.pexels.com/photos/1024974/pexels-photo-1024974.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Casal caminhando',
-      caption: 'Caminhando juntos rumo ao nosso futuro'
+      src: photo5,
+      alt: 'J&K',
+      caption: 'Meu bem mais precioso'
     },
     {
       id: '6',
-      src: 'https://images.pexels.com/photos/1024968/pexels-photo-1024968.jpeg?auto=compress&cs=tinysrgb&w=800',
-      alt: 'Casal olhando sunset',
-      caption: 'Contemplando o infinito de mãos dadas'
+      src: photo6,
+      alt: 'J&K',
+      caption: 'Meu presente e meu futuro'
     }
   ];
 
@@ -129,11 +137,8 @@ const GallerySection: React.FC = () => {
             </motion.div>
 
             <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 mb-6" style={{ fontFamily: 'Dancing Script, cursive' }}>
-              Galeria dos Nossos Momentos
+              Nossa Galeria
             </h2>
-            <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-              Cada foto conta uma história única, cada momento é uma memória preciosa que guardamos no coração
-            </p>
           </motion.div>
 
           <motion.div

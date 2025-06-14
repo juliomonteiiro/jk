@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Camera, Clock, Music2, MessageCircle, Sparkles, Menu, X } from 'lucide-react';
+import logo from '../assets/images/logo.png';
 
 interface NavigationProps {
   activeSection: string;
@@ -71,9 +72,11 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onSectionClick }
                 </div>
               </div>
               <div className="hidden sm:block">
-                <h1 className="text-lg font-bold text-white group-hover:text-white/90 group-hover:scale-105 transition-all duration-300">
-                  Nossa História
-                </h1>
+                <img 
+                  src={logo} 
+                  alt="Logo" 
+                  className="h-24 w-auto object-contain"
+                />
               </div>
             </div>
 

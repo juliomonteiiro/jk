@@ -7,39 +7,39 @@ const TimelineSection: React.FC = () => {
   const timelineEvents: TimelineEvent[] = [
     {
       id: '1',
-      date: '15 de Julho, 2023',
+      date: '10 de Dezembro, 2023',
       title: 'Primeiro Olhar',
-      description: 'O momento mágico em que nossos olhares se cruzaram e o universo conspirou para nos unir. Foi como se o tempo parasse e tudo fizesse sentido.',
+      description: 'A primeira vez que eu te vi, nem imaginava que, a partir dali, tudo mudaria.',
     },
     {
       id: '2',
-      date: '2 de Agosto, 2023',
-      title: 'Primeira Conversa Especial',
-      description: 'Horas e horas conversando, descobrindo que tínhamos muito mais em comum do que imaginávamos. Cada palavra era uma descoberta.',
+      date: '8 de Março, 2023',
+      title: 'Primeiro Chocolate 🍫',
+      description: 'Um dos nossos momentos mais engraçados: eu, com vergonha de te entregar um chocolate, parecia uma criança apaixonada.',
     },
     {
       id: '3',
-      date: '18 de Agosto, 2023',
-      title: 'Oficialmente Juntos ✨',
-      description: 'O dia em que decidimos escrever nossa história de amor juntos. O início de uma jornada mágica que continua até hoje.',
+      date: '12 de Agosto, 2023',
+      title: 'A Ligação',
+      description: 'Aquele tinha tudo para ser um dia ruim, mas foi no momento difícil que ficou claro que deveríamos estar juntos.',
     },
     {
       id: '4',
-      date: '15 de Setembro, 2023',
-      title: 'Nossa Primeira Aventura',
-      description: 'Explorando novos lugares de mãos dadas, criando memórias que guardaremos para sempre no coração.',
+      date: '15 de Agosto, 2023',
+      title: 'Primeiro Beijo',
+      description: 'O dia do primeiro beijo, da confirmação de que todo o tempo havia valido a pena.',
     },
     {
       id: '5',
-      date: '31 de Outubro, 2023',
-      title: 'Halloween Juntos',
-      description: 'Nossa primeira festa temática como casal, rindo e nos divertindo como duas crianças apaixonadas.',
+      date: '18 de Agosto, 2023',
+      title: 'Nossa Data',
+      description: 'Nosso início, o começo da nossa história. O dia em que pude te chamar de minha namorada.',
     },
     {
       id: '6',
-      date: '25 de Dezembro, 2023',
-      title: 'Primeiro Natal do Coração',
-      description: 'Celebrando o amor e a gratidão, construindo tradições que levaremos para toda a vida.',
+      date: '9 de Julho, 2024',
+      title: 'Alianças',
+      description: 'Talvez não tenha sido a melhor data para entregar as alianças, mas naquele momento eu só queria te mostrar o quanto eu te queria.',
     },
   ];
 
@@ -109,10 +109,10 @@ const TimelineSection: React.FC = () => {
           </motion.div>
 
           <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 mb-6" style={{ fontFamily: 'Dancing Script, cursive' }}>
-            Nossa História Encantada
+            Nossa História
           </h2>
           <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Cada capítulo da nossa história é único e especial, construindo a base do nosso amor eterno
+            Os primeiros capítulos da nossa história, onde tudo começou.
           </p>
         </motion.div>
 
@@ -127,9 +127,8 @@ const TimelineSection: React.FC = () => {
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.15 }}
-                className={`relative flex items-center mb-16 ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                }`}
+                className={`relative flex items-center mb-16 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                  }`}
               >
                 {/* Enhanced Timeline Dot */}
                 <div className="absolute left-4 md:left-1/2 w-6 h-6 transform -translate-x-1/2 z-10">
@@ -156,13 +155,13 @@ const TimelineSection: React.FC = () => {
                   >
                     {/* Card glow effect */}
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    
+
                     <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 group-hover:border-white/20 transition-all duration-500 shadow-2xl">
                       <div className="flex items-center space-x-3 text-blue-300 mb-4">
                         <Calendar size={18} />
                         <span className="text-sm font-medium">{event.date}</span>
                       </div>
-                      
+
                       <h3 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-center space-x-3">
                         <motion.div
                           animate={{ rotate: [0, 10, -10, 0] }}
@@ -172,10 +171,12 @@ const TimelineSection: React.FC = () => {
                         </motion.div>
                         <span>{event.title}</span>
                       </h3>
-                      
+
                       <p className="text-white/80 leading-relaxed text-base md:text-lg">
                         {event.description}
                       </p>
+
+
 
                       {/* Decorative corner elements */}
                       <div className="absolute top-4 right-4 text-purple-400/30">
@@ -189,7 +190,18 @@ const TimelineSection: React.FC = () => {
                 </div>
               </motion.div>
             ))}
+
           </div>
+            <div className="max-w-4xl mx-auto mt-24 px-4 relative z-10 text-white text-center">
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="text-white/80 mb-6 text-lg"
+              >
+              Isso é apenas um pedacinho do nosso começo e da nossa história. Ela ainda não está completa — e, sinceramente, espero que nunca esteja —, porque sei que ainda temos muitos passos lindos a dar e uma vida inteira para construir, lado a lado
+              </motion.p>
+            </div>
         </div>
       </div>
     </section>

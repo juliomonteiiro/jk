@@ -94,8 +94,8 @@ const FinalSection: React.FC<FinalSectionProps> = ({ onScrollToTop }) => {
             transition={{ delay: 0.7 }}
             className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed"
           >
-            Este site é apenas uma pequena demonstração do imenso amor que sinto. 
-            Que nossa história continue sendo escrita com muito amor, risadas e momentos inesquecíveis.
+            Este site é apenas uma pequena forma de expressar o quanto você significa para mim. 
+            Cada momento, cada risada, cada lágrima compartilhada, tudo isso constrói a nossa linda história.
           </motion.p>
 
           <motion.p
@@ -104,7 +104,7 @@ const FinalSection: React.FC<FinalSectionProps> = ({ onScrollToTop }) => {
             transition={{ delay: 0.9 }}
             className="text-lg md:text-xl text-white/80 mb-12"
           >
-            Te amo hoje, te amarei amanhã e te amarei para sempre. ❤️
+            Eu te amo eternamente, meu amor. ❤️
           </motion.p>
 
           <motion.div
@@ -113,15 +113,6 @@ const FinalSection: React.FC<FinalSectionProps> = ({ onScrollToTop }) => {
             transition={{ delay: 1.1 }}
             className="space-y-8"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.3 }}
-              className="border-t border-white/20 pt-8"
-            >
-              <p className="text-white/70 mb-8 text-lg">
-                Feito com muito ❤️ por quem te ama
-              </p>
               
               <motion.button
                 onClick={onScrollToTop}
@@ -140,7 +131,6 @@ const FinalSection: React.FC<FinalSectionProps> = ({ onScrollToTop }) => {
                 {/* Button glow effect */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white/0 to-white/0 group-hover:from-white/10 group-hover:to-white/10 transition-all duration-300" />
               </motion.button>
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>

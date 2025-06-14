@@ -91,10 +91,10 @@ const CounterSection: React.FC = () => {
           </motion.div>
 
           <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-purple-200 to-indigo-200 mb-6" style={{ fontFamily: 'Dancing Script, cursive' }}>
-            Nosso Tempo Mágico Juntos
+            Nosso Tempo Juntos
           </h2>
           <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Cada segundo ao seu lado é um presente precioso. Veja quanto tempo de amor puro já compartilhamos!
+            Cada segundo ao seu lado é uma dádiva que Deus me dá.
           </p>
         </motion.div>
 
@@ -161,9 +161,7 @@ const CounterSection: React.FC = () => {
                   Desde 18 de Agosto de 2023
                 </h3>
                 <p className="text-lg md:text-xl text-white/80 mb-8 leading-relaxed max-w-3xl mx-auto">
-                  Foram <strong className="text-blue-300">{timeLeft.days}</strong> dias repletos de amor verdadeiro, 
-                  risadas contagiantes, aventuras inesquecíveis e crescimento mútuo. 
-                  E isso é apenas o começo da nossa eternidade juntos!
+                  Foram <strong className="text-blue-300">{timeLeft.days}</strong> dias ao seu lada, vivendo os melhores momentos da minha vida, e contando cada segundo para sempre estar ao seu lado. 
                 </p>
                 
                 <motion.div

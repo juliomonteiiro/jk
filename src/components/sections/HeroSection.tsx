@@ -142,7 +142,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToNext }) => {
               className="relative text-2xl md:text-4xl text-white/90 mb-8 font-semibold"
               style={{ fontFamily: 'Dancing Script, cursive' }}
             >
-              minha princesa Kemily ✨
+              Minha Princesa✨
             </p>
           </motion.div>
 
@@ -152,8 +152,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onScrollToNext }) => {
             transition={{ delay: 1.3, duration: 0.8 }}
             className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed"
           >
-            Este site é uma declaração de amor especial, criada com todo carinho para celebrar
-            nossa jornada única e os momentos mágicos que vivemos juntos.
+            Este site é uma forma de demonstrar meu amor do meu jeito, para você meu amor.
           </motion.p>
 
           <motion.button
